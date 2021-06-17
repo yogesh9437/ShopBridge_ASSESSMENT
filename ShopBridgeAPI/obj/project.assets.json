@@ -7372,11 +7372,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\YOSH\\Assessment\\Q1\\ShopBridgeAPI\\ShopBridgeAPI.csproj",
+      "projectUniqueName": "D:\\YOSH\\Assessment\\ASSESSMENT TEST 18062021\\ShopBridge_ASSESSMENT\\ShopBridgeAPI\\ShopBridgeAPI.csproj",
       "projectName": "ShopBridgeAPI",
-      "projectPath": "D:\\YOSH\\Assessment\\Q1\\ShopBridgeAPI\\ShopBridgeAPI.csproj",
+      "projectPath": "D:\\YOSH\\Assessment\\ASSESSMENT TEST 18062021\\ShopBridge_ASSESSMENT\\ShopBridgeAPI\\ShopBridgeAPI.csproj",
       "packagesPath": "C:\\Users\\ypsat\\.nuget\\packages\\",
-      "outputPath": "D:\\YOSH\\Assessment\\Q1\\ShopBridgeAPI\\obj\\",
+      "outputPath": "D:\\YOSH\\Assessment\\ASSESSMENT TEST 18062021\\ShopBridge_ASSESSMENT\\ShopBridgeAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ypsat\\AppData\\Roaming\\NuGet\\NuGet.Config",

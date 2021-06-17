@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SMtq9Y+zhHv+5r9PtoCffWhFOfEjintcwsaLzcPuE3e73taN0RLOhgsId3R4i2p2Wyl6DYsTgKSWO85kspUB1w==",
+  "dgSpecHash": "s/z55iKWZQnwkH22Z1745QCYvbSBF9Tf/rsEINLtOzcH7agHnui8Ty+96MSQk63PdmJSKC7vWxxN629R23EMqA==",
   "success": true,
-  "projectFilePath": "D:\\YOSH\\Assessment\\Q1\\ShopBridgeAPI\\ShopBridgeAPI.csproj",
+  "projectFilePath": "D:\\YOSH\\Assessment\\ASSESSMENT TEST 18062021\\ShopBridge_ASSESSMENT\\ShopBridgeAPI\\ShopBridgeAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ypsat\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\ypsat\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\5.0.7\\microsoft.aspnetcore.authentication.jwtbearer.5.0.7.nupkg.sha512",
