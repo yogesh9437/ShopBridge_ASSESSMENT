@@ -1,0 +1,48 @@
+<form novalidate autocomplete="off" #form="ngForm" (submit)="onSubmit(form)">
+    <input type="hidden" name="paymentDetailId" [value]="service.formData.itemId" />
+    <div class="form-group">
+        <label>Item Name <span class="text-danger">*</span> </label>
+        <input class="form-control form-control-lg" placeholder="Item Name" name="itemName"
+            #itemName="ngModel" [(ngModel)]="service.formData.itemName"
+            required [class.invalid]="itemName.invalid && itemName.touched">
+    </div>
+    <div class="form-group">
+        <label>Price <span class="text-danger">*</span> </label>
+        <input class="form-control form-control-lg" name="price"
+            #price="ngModel" [(ngModel)]="service.formData.price"
+            required [class.invalid]="price.invalid && price.touched" >
+    </div>
+    <div class="form-group">
+        <label>Description <span class="text-danger">*</span> </label>
+        <textarea  class="form-control form-control-lg" placeholder="Description" name="description"
+            #description="ngModel" [(ngModel)]="service.formData.description"
+            required [class.invalid]="description.invalid && description.touched"></textarea>
+    </div>
+    <div class="form-group">
+        <label>Expiry Date <span class="text-danger">*</span> </label>
+        <input class="form-control form-control-lg" placeholder="MM/YY" name="expiryDate"
+            #expiryDate="ngModel" [(ngModel)]="service.formData.expiryDate"
+            required [class.invalid]="expiryDate.invalid && expiryDate.touched" maxlength="5">
+    </div>
+    <!-- <div class="form-group">
+        <mat-form-field appearance="fill">
+            <mat-label>Month and Year</mat-label>
+            <input matInput [matDatepicker]="dp" name="expiryDate" #expiryDate="ngModel" [(ngModel)]="service.formData.expiryDate" >
+            <mat-datepicker-toggle matSuffix [for]="dp"></mat-datepicker-toggle>
+            <mat-datepicker #dp
+                            startView="multi-year"
+                            (yearSelected)="chosenYearHandler($event)"
+                            (monthSelected)="chosenMonthHandler($event, dp)"
+                            panelClass="example-month-picker">
+            </mat-datepicker>
+          </mat-form-field>
+    </div> -->
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <button class="btn btn-info btn-lg btn-block" type="submit" [disabled]="form.invalid">SUBMIT</button>
+        </div>
+        <div class="form-group col-md-6">
+            <button class="btn btn-danger btn-lg btn-block" type="button" (click)="Clear(form)" >CLEAR</button>
+        </div>
+    </div>
+</form>

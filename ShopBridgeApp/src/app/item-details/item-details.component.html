@@ -1,0 +1,38 @@
+<div class="jumbotron py-3">
+    <h1 class="display-4 text-center">ShopBridge Item Detail Inventrory</h1>
+</div>
+<div class="row">
+    <div class="col-md-6 text-right "><mark><span class="text-danger">*</span> Indicate to maindatory fields</mark></div>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        
+        <app-item-detail-form></app-item-detail-form>
+    </div>
+    <div class="col-md-6">
+        <table class="table">
+            <thead class="thead-light">
+                <tr>
+                    <th>Item Name</th>
+                    <th>Price</th>
+                    <th>Description</th>
+                    <th>Exp. Date</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let pd of service.list">
+                    <td >{{pd.itemName}}</td>
+                    <td >{{pd.price}}</td>
+                    <td >{{pd.description}}</td>
+                    <td >{{pd.expiryDate}}</td>
+                    <td>
+                        <i class="far fa-edit fa-lg text-info" (click)="populateForm(pd)" title="edit"></i> &nbsp;
+                        <i class="far fa-trash-alt fa-lg text-danger" (click)="onDelete(pd.itemId)" title="delete"></i>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
